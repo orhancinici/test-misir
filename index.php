@@ -1,1 +1,1 @@
-<?php include_once ("pie_kaynaklar.html"; ?>)
+<?php include_once ("index.html"; ?>)
