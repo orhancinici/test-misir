@@ -2,16 +2,1106 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Mısırlı Ravilerin Kaynak Dağılımı</title>
+    <title>Kaynak Analizi ve Ravi Dağılımı</title>
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
 
+    
 </head>
 <body>
-    <div id="cae7c16b1cad42bf8489104d755f2862" class="chart-container" style="width:900px; height:500px;"></div>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, '94656096e87840a48e238c74fa11748e')">Ravilerin Zamana Göre Dağılımı</button>
+            <button class="tablinks" onclick="showChart(event, '4f13c339c0b24c819736e1f599b36258')">Bar Kaynak Dağılımı</button>
+            <button class="tablinks" onclick="showChart(event, 'a57834fbd8a440c98ad890986670ada4')">Bar2 Kaynak Dağılımı</button>
+            <button class="tablinks" onclick="showChart(event, '517a663842f546729a245aeff2de693c')">Pasta Dilimi Kaynak Dağılımı</button>
+    </div>
+
+    <div class="box">
+                <div id="94656096e87840a48e238c74fa11748e" class="chart-container" style="width:1600px; height:800px;"></div>
     <script>
-        var chart_cae7c16b1cad42bf8489104d755f2862 = echarts.init(
-            document.getElementById('cae7c16b1cad42bf8489104d755f2862'), 'white', {renderer: 'canvas'});
-        var option_cae7c16b1cad42bf8489104d755f2862 = {
+        var chart_94656096e87840a48e238c74fa11748e = echarts.init(
+            document.getElementById('94656096e87840a48e238c74fa11748e'), 'white', {renderer: 'canvas'});
+        var option_94656096e87840a48e238c74fa11748e = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "green",
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "M\u0131s\u0131rl\u0131lar",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "300",
+                    73
+                ],
+                [
+                    "310",
+                    69
+                ],
+                [
+                    "320",
+                    66
+                ],
+                [
+                    "330",
+                    60
+                ],
+                [
+                    "340",
+                    63
+                ],
+                [
+                    "350",
+                    24
+                ],
+                [
+                    "360",
+                    9
+                ],
+                [
+                    "370",
+                    13
+                ],
+                [
+                    "380",
+                    16
+                ],
+                [
+                    "390",
+                    13
+                ],
+                [
+                    "400",
+                    6
+                ],
+                [
+                    "410",
+                    6
+                ],
+                [
+                    "420",
+                    5
+                ],
+                [
+                    "430",
+                    8
+                ],
+                [
+                    "440",
+                    10
+                ],
+                [
+                    "450",
+                    7
+                ],
+                [
+                    "460",
+                    4
+                ],
+                [
+                    "470",
+                    1
+                ],
+                [
+                    "480",
+                    2
+                ],
+                [
+                    "490",
+                    1
+                ],
+                [
+                    "500",
+                    1
+                ],
+                [
+                    "510",
+                    5
+                ],
+                [
+                    "520",
+                    5
+                ],
+                [
+                    "530",
+                    1
+                ],
+                [
+                    "540",
+                    1
+                ],
+                [
+                    "550",
+                    1
+                ],
+                [
+                    "560",
+                    4
+                ],
+                [
+                    "570",
+                    7
+                ],
+                [
+                    "580",
+                    3
+                ],
+                [
+                    "590",
+                    1
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 3,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "#d48265"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "markArea": {
+                "silent": false,
+                "label": {
+                    "show": true,
+                    "position": "top",
+                    "margin": 8
+                },
+                "data": [
+                    [
+                        {
+                            "name": "Abbasiler",
+                            "xAxis": "300"
+                        },
+                        {
+                            "xAxis": "320"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "\u0130h\u015fidler",
+                            "xAxis": "320"
+                        },
+                        {
+                            "xAxis": "360"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Fat\u0131miler",
+                            "yAxis": "360"
+                        },
+                        {
+                            "yAxis": "550"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Eyy\u00fcbiler",
+                            "xAxis": "550"
+                        },
+                        {
+                            "xAxis": "590"
+                        }
+                    ]
+                ]
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "Gureba",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": true,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "300",
+                    55
+                ],
+                [
+                    "310",
+                    59
+                ],
+                [
+                    "320",
+                    60
+                ],
+                [
+                    "330",
+                    18
+                ],
+                [
+                    "340",
+                    26
+                ],
+                [
+                    "350",
+                    23
+                ],
+                [
+                    "360",
+                    28
+                ],
+                [
+                    "370",
+                    20
+                ],
+                [
+                    "380",
+                    21
+                ],
+                [
+                    "390",
+                    13
+                ],
+                [
+                    "400",
+                    25
+                ],
+                [
+                    "410",
+                    9
+                ],
+                [
+                    "420",
+                    15
+                ],
+                [
+                    "430",
+                    13
+                ],
+                [
+                    "440",
+                    18
+                ],
+                [
+                    "450",
+                    10
+                ],
+                [
+                    "460",
+                    7
+                ],
+                [
+                    "470",
+                    13
+                ],
+                [
+                    "480",
+                    9
+                ],
+                [
+                    "490",
+                    6
+                ],
+                [
+                    "500",
+                    8
+                ],
+                [
+                    "510",
+                    16
+                ],
+                [
+                    "520",
+                    4
+                ],
+                [
+                    "530",
+                    8
+                ],
+                [
+                    "540",
+                    13
+                ],
+                [
+                    "550",
+                    6
+                ],
+                [
+                    "560",
+                    10
+                ],
+                [
+                    "570",
+                    9
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "#749f83"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "markArea": {
+                "silent": false,
+                "label": {
+                    "show": true,
+                    "position": "top",
+                    "margin": 8
+                },
+                "data": [
+                    [
+                        {
+                            "name": "Abbasiler",
+                            "xAxis": "300"
+                        },
+                        {
+                            "xAxis": "320"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "\u0130h\u015fidler",
+                            "xAxis": "320"
+                        },
+                        {
+                            "xAxis": "360"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Fat\u0131miler",
+                            "yAxis": "360"
+                        },
+                        {
+                            "yAxis": "550"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Eyy\u00fcbiler",
+                            "xAxis": "550"
+                        },
+                        {
+                            "xAxis": "590"
+                        }
+                    ]
+                ]
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "M\u0131s\u0131rl\u0131lar",
+                "Gureba"
+            ],
+            "selected": {
+                "M\u0131s\u0131rl\u0131lar": true,
+                "Gureba": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "boundaryGap": false,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "300",
+                "310",
+                "320",
+                "330",
+                "340",
+                "350",
+                "360",
+                "370",
+                "380",
+                "390",
+                "400",
+                "410",
+                "420",
+                "430",
+                "440",
+                "450",
+                "460",
+                "470",
+                "480",
+                "490",
+                "500",
+                "510",
+                "520",
+                "530",
+                "540",
+                "550",
+                "560",
+                "570",
+                "580",
+                "590"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{value} Ravi"
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "Zamana G\u00f6re",
+            "subtext": "Ravi Say\u0131s\u0131",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "dimension": 0,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "lte": 20,
+                "color": "green"
+            },
+            {
+                "gt": 20,
+                "lte": 50,
+                "color": "red"
+            },
+            {
+                "gt": 50,
+                "lte": 70,
+                "color": "green"
+            },
+            {
+                "gt": 70,
+                "lte": 100,
+                "color": "red"
+            },
+            {
+                "gt": 100,
+                "color": "green"
+            }
+        ]
+    }
+};
+        chart_94656096e87840a48e238c74fa11748e.setOption(option_94656096e87840a48e238c74fa11748e);
+    </script>
+                <div id="4f13c339c0b24c819736e1f599b36258" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_4f13c339c0b24c819736e1f599b36258 = echarts.init(
+            document.getElementById('4f13c339c0b24c819736e1f599b36258'), 'white', {renderer: 'canvas'});
+        var option_4f13c339c0b24c819736e1f599b36258 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "M\u0131s\u0131rl\u0131lar",
+            "legendHoverLink": true,
+            "data": [
+                null,
+                12.0,
+                17.0,
+                null,
+                null,
+                36.0,
+                47.0,
+                174.0
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "bar",
+            "name": "Gureba",
+            "legendHoverLink": true,
+            "data": [
+                3.0,
+                null,
+                308.0,
+                10.0,
+                25.0,
+                null,
+                112.0,
+                null
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "M\u0131s\u0131rl\u0131lar",
+                "Gureba"
+            ],
+            "selected": {
+                "M\u0131s\u0131rl\u0131lar": true,
+                "Gureba": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "rotate": 35,
+                "margin": 8
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "HabbalTarih",
+                "HusnulMuhadara",
+                "MakriziMukaffa",
+                "ZehebiSiyer",
+                "ZehebiTezkira",
+                "\u0130bnTahhan",
+                "\u0130bnYunusGureba",
+                "\u0130bnYunusTarih"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "Kaynaklara G\u00f6re Rical Da\u011f\u0131l\u0131m\u0131",
+            "subtext": "Ki\u015fi Say\u0131s\u0131",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_4f13c339c0b24c819736e1f599b36258.setOption(option_4f13c339c0b24c819736e1f599b36258);
+    </script>
+                <div id="a57834fbd8a440c98ad890986670ada4" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_a57834fbd8a440c98ad890986670ada4 = echarts.init(
+            document.getElementById('a57834fbd8a440c98ad890986670ada4'), 'white', {renderer: 'canvas'});
+        var option_a57834fbd8a440c98ad890986670ada4 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "M\u0131s\u0131rl\u0131lar",
+            "legendHoverLink": true,
+            "data": [
+                null,
+                12.0,
+                17.0,
+                null,
+                null,
+                36.0,
+                47.0,
+                174.0
+            ],
+            "showBackground": false,
+            "stack": "stack1",
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "Gureba",
+            "legendHoverLink": true,
+            "data": [
+                3.0,
+                null,
+                308.0,
+                10.0,
+                25.0,
+                null,
+                112.0,
+                null
+            ],
+            "showBackground": false,
+            "stack": "stack1",
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "M\u0131s\u0131rl\u0131lar",
+                "Gureba"
+            ],
+            "selected": {
+                "M\u0131s\u0131rl\u0131lar": true,
+                "Gureba": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "rotate": 35,
+                "margin": 8
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "HabbalTarih",
+                "HusnulMuhadara",
+                "MakriziMukaffa",
+                "ZehebiSiyer",
+                "ZehebiTezkira",
+                "\u0130bnTahhan",
+                "\u0130bnYunusGureba",
+                "\u0130bnYunusTarih"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "Kaynaklara G\u00f6re Rical Da\u011f\u0131l\u0131m\u0131",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_a57834fbd8a440c98ad890986670ada4.setOption(option_a57834fbd8a440c98ad890986670ada4);
+    </script>
+                <div id="517a663842f546729a245aeff2de693c" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_517a663842f546729a245aeff2de693c = echarts.init(
+            document.getElementById('517a663842f546729a245aeff2de693c'), 'white', {renderer: 'canvas'});
+        var option_517a663842f546729a245aeff2de693c = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -49,7 +1139,7 @@
     "series": [
         {
             "type": "pie",
-            "name": "Ravi Say\u0131s\u0131",
+            "name": "Kaynak",
             "clockwise": true,
             "data": [
                 {
@@ -100,7 +1190,7 @@
                 "formatter": "{a|{a}}{abg|}\n{hr|}\n {a|{b}: }{c}  {per|{d}%}  ",
                 "backgroundColor": "#eee",
                 "borderColor": "#aaa",
-                "borderWidth": 4,
+                "borderWidth": 3,
                 "borderRadius": 5,
                 "rich": {
                     "a": {
@@ -216,7 +1306,34 @@
         }
     ]
 };
-        chart_cae7c16b1cad42bf8489104d755f2862.setOption(option_cae7c16b1cad42bf8489104d755f2862);
+        chart_517a663842f546729a245aeff2de693c.setOption(option_517a663842f546729a245aeff2de693c);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
     </script>
 </body>
 </html>
