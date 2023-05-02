@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kaynak Analizi ve Ravi Dağılımı</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, '23c5478d19f5481a94ea3eef39631390')">Ravilerin Zamana Göre Dağılımı</button>
+            <button class="tablinks" onclick="showChart(event, 'e822f8475bea464bbbe3e655b980ed37')">Bar Kaynak Dağılımı</button>
+            <button class="tablinks" onclick="showChart(event, 'dccd614730ec4a6aa0a753161c0c371c')">Bar2 Kaynak Dağılımı</button>
+            <button class="tablinks" onclick="showChart(event, '051e6aa6067d4169b91f8972ad9b4572')">Pasta Dilimi Kaynak Dağılımı</button>
+    </div>
+
+    <div class="box">
+                <div id="23c5478d19f5481a94ea3eef39631390" class="chart-container" style="width:1400px; height:700px;"></div>
+    <script>
+        var chart_23c5478d19f5481a94ea3eef39631390 = echarts.init(
+            document.getElementById('23c5478d19f5481a94ea3eef39631390'), 'white', {renderer: 'canvas'});
+        var option_23c5478d19f5481a94ea3eef39631390 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "green",
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "M\u0131s\u0131rl\u0131",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "300",
+                    100
+                ],
+                [
+                    "310",
+                    95
+                ],
+                [
+                    "320",
+                    83
+                ],
+                [
+                    "330",
+                    79
+                ],
+                [
+                    "340",
+                    91
+                ],
+                [
+                    "350",
+                    76
+                ],
+                [
+                    "360",
+                    92
+                ],
+                [
+                    "370",
+                    83
+                ],
+                [
+                    "380",
+                    63
+                ],
+                [
+                    "390",
+                    45
+                ],
+                [
+                    "400",
+                    29
+                ],
+                [
+                    "410",
+                    58
+                ],
+                [
+                    "420",
+                    40
+                ],
+                [
+                    "430",
+                    37
+                ],
+                [
+                    "440",
+                    56
+                ],
+                [
+                    "450",
+                    24
+                ],
+                [
+                    "460",
+                    14
+                ],
+                [
+                    "470",
+                    2
+                ],
+                [
+                    "480",
+                    5
+                ],
+                [
+                    "490",
+                    8
+                ],
+                [
+                    "500",
+                    2
+                ],
+                [
+                    "510",
+                    23
+                ],
+                [
+                    "520",
+                    24
+                ],
+                [
+                    "530",
+                    6
+                ],
+                [
+                    "540",
+                    5
+                ],
+                [
+                    "550",
+                    4
+                ],
+                [
+                    "560",
+                    13
+                ],
+                [
+                    "570",
+                    25
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "#d48265"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "markArea": {
+                "silent": false,
+                "label": {
+                    "show": true,
+                    "position": "top",
+                    "margin": 8
+                },
+                "data": [
+                    [
+                        {
+                            "name": "Abbasiler",
+                            "xAxis": "300"
+                        },
+                        {
+                            "xAxis": "320"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "\u0130h\u015fidler",
+                            "xAxis": "320"
+                        },
+                        {
+                            "xAxis": "360"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Fat\u0131miler",
+                            "yAxis": "360"
+                        },
+                        {
+                            "yAxis": "550"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Eyy\u00fcbiler",
+                            "xAxis": "550"
+                        },
+                        {
+                            "xAxis": "590"
+                        }
+                    ]
+                ]
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "M\u0131s\u0131r'a Rihle Yapan",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "300",
+                    57
+                ],
+                [
+                    "310",
+                    60
+                ],
+                [
+                    "320",
+                    68
+                ],
+                [
+                    "330",
+                    24
+                ],
+                [
+                    "340",
+                    35
+                ],
+                [
+                    "350",
+                    36
+                ],
+                [
+                    "360",
+                    45
+                ],
+                [
+                    "370",
+                    49
+                ],
+                [
+                    "380",
+                    38
+                ],
+                [
+                    "390",
+                    35
+                ],
+                [
+                    "400",
+                    39
+                ],
+                [
+                    "410",
+                    19
+                ],
+                [
+                    "420",
+                    19
+                ],
+                [
+                    "430",
+                    21
+                ],
+                [
+                    "440",
+                    27
+                ],
+                [
+                    "450",
+                    16
+                ],
+                [
+                    "460",
+                    10
+                ],
+                [
+                    "470",
+                    14
+                ],
+                [
+                    "480",
+                    16
+                ],
+                [
+                    "490",
+                    11
+                ],
+                [
+                    "500",
+                    9
+                ],
+                [
+                    "510",
+                    18
+                ],
+                [
+                    "520",
+                    5
+                ],
+                [
+                    "530",
+                    10
+                ],
+                [
+                    "540",
+                    13
+                ],
+                [
+                    "550",
+                    5
+                ],
+                [
+                    "560",
+                    11
+                ],
+                [
+                    "570",
+                    7
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2.5,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "#749f83"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "markArea": {
+                "silent": false,
+                "label": {
+                    "show": true,
+                    "position": "top",
+                    "margin": 8
+                },
+                "data": [
+                    [
+                        {
+                            "name": "Abbasiler",
+                            "xAxis": "300"
+                        },
+                        {
+                            "xAxis": "320"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "\u0130h\u015fidler",
+                            "xAxis": "320"
+                        },
+                        {
+                            "xAxis": "360"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Fat\u0131miler",
+                            "yAxis": "360"
+                        },
+                        {
+                            "yAxis": "550"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Eyy\u00fcbiler",
+                            "xAxis": "550"
+                        },
+                        {
+                            "xAxis": "590"
+                        }
+                    ]
+                ]
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "M\u0131s\u0131rl\u0131",
+                "M\u0131s\u0131r'a Rihle Yapan"
+            ],
+            "selected": {
+                "M\u0131s\u0131rl\u0131": true,
+                "M\u0131s\u0131r'a Rihle Yapan": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "boundaryGap": false,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "300",
+                "310",
+                "320",
+                "330",
+                "340",
+                "350",
+                "360",
+                "370",
+                "380",
+                "390",
+                "400",
+                "410",
+                "420",
+                "430",
+                "440",
+                "450",
+                "460",
+                "470",
+                "480",
+                "490",
+                "500",
+                "510",
+                "520",
+                "530",
+                "540",
+                "550",
+                "560",
+                "570",
+                "580",
+                "590"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{value} Alim"
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "Y\u0131llara G\u00f6re M\u0131s\u0131rl\u0131 ve M\u0131s\u0131r'a Rihle Yapan Alimler",
+            "subtext": "Ravi Say\u0131s\u0131",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_23c5478d19f5481a94ea3eef39631390.setOption(option_23c5478d19f5481a94ea3eef39631390);
+    </script>
+                <div id="e822f8475bea464bbbe3e655b980ed37" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_e822f8475bea464bbbe3e655b980ed37 = echarts.init(
+            document.getElementById('e822f8475bea464bbbe3e655b980ed37'), 'white', {renderer: 'canvas'});
+        var option_e822f8475bea464bbbe3e655b980ed37 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "M\u0131s\u0131rl\u0131",
+            "legendHoverLink": true,
+            "data": [
+                1.0,
+                227.0,
+                1.0,
+                30.0,
+                47.0,
+                5.0,
+                1.0,
+                1.0,
+                159.0,
+                11.0,
+                3.0,
+                4.0,
+                null,
+                6.0,
+                162.0,
+                1.0,
+                3.0,
+                2.0,
+                8.0,
+                13.0,
+                259.0,
+                47.0,
+                194.0,
+                1.0,
+                1.0
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "bar",
+            "name": "M\u0131s\u0131r'a Rihle Yapan",
+            "legendHoverLink": true,
+            "data": [
+                10.0,
+                8.0,
+                null,
+                35.0,
+                null,
+                2.0,
+                null,
+                null,
+                272.0,
+                3.0,
+                null,
+                1.0,
+                1.0,
+                30.0,
+                16.0,
+                20.0,
+                null,
+                null,
+                24.0,
+                80.0,
+                13.0,
+                109.0,
+                null,
+                null,
+                92.0
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "M\u0131s\u0131rl\u0131",
+                "M\u0131s\u0131r'a Rihle Yapan"
+            ],
+            "selected": {
+                "M\u0131s\u0131rl\u0131": true,
+                "M\u0131s\u0131r'a Rihle Yapan": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "rotate": 35,
+                "margin": 8
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "EbuCaferBugye",
+                "HabbalTarih",
+                "HakimTelhis",
+                "HatibTarih",
+                "HusnulMuhadara",
+                "Kad\u0131IyazTertib",
+                "Kaynak",
+                "K\u0131fti\u0130nbahurRuvat",
+                "MakriziMukaffa",
+                "RaziMe\u015fyeha",
+                "SemaniEnsab",
+                "SilefiMucem",
+                "YakutHameviMucem",
+                "ZehebiSiyer",
+                "ZehebiTarih",
+                "ZehebiTezkira",
+                "\u00dcdf\u00fcviTali",
+                "\u0130bnAdimBugye",
+                "\u0130bnAsakirTarih",
+                "\u0130bnBe\u015fkuvalS\u0131la",
+                "\u0130bnTahhan",
+                "\u0130bnYunusGureba",
+                "\u0130bnYunusTarih",
+                "\u0130bnulMukriMucem",
+                "\u0130bn\u00fclFaradiTarih"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "Kaynaklara G\u00f6re Rical Da\u011f\u0131l\u0131m\u0131",
+            "subtext": "Ki\u015fi Say\u0131s\u0131",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_e822f8475bea464bbbe3e655b980ed37.setOption(option_e822f8475bea464bbbe3e655b980ed37);
+    </script>
+                <div id="dccd614730ec4a6aa0a753161c0c371c" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_dccd614730ec4a6aa0a753161c0c371c = echarts.init(
+            document.getElementById('dccd614730ec4a6aa0a753161c0c371c'), 'white', {renderer: 'canvas'});
+        var option_dccd614730ec4a6aa0a753161c0c371c = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "M\u0131s\u0131rl\u0131",
+            "legendHoverLink": true,
+            "data": [
+                1.0,
+                227.0,
+                1.0,
+                30.0,
+                47.0,
+                5.0,
+                1.0,
+                1.0,
+                159.0,
+                11.0,
+                3.0,
+                4.0,
+                null,
+                6.0,
+                162.0,
+                1.0,
+                3.0,
+                2.0,
+                8.0,
+                13.0,
+                259.0,
+                47.0,
+                194.0,
+                1.0,
+                1.0
+            ],
+            "showBackground": false,
+            "stack": "stack1",
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "M\u0131s\u0131r'a Rihle Yapan",
+            "legendHoverLink": true,
+            "data": [
+                10.0,
+                8.0,
+                null,
+                35.0,
+                null,
+                2.0,
+                null,
+                null,
+                272.0,
+                3.0,
+                null,
+                1.0,
+                1.0,
+                30.0,
+                16.0,
+                20.0,
+                null,
+                null,
+                24.0,
+                80.0,
+                13.0,
+                109.0,
+                null,
+                null,
+                92.0
+            ],
+            "showBackground": false,
+            "stack": "stack1",
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "M\u0131s\u0131rl\u0131",
+                "M\u0131s\u0131r'a Rihle Yapan"
+            ],
+            "selected": {
+                "M\u0131s\u0131rl\u0131": true,
+                "M\u0131s\u0131r'a Rihle Yapan": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "rotate": 35,
+                "margin": 8
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "EbuCaferBugye",
+                "HabbalTarih",
+                "HakimTelhis",
+                "HatibTarih",
+                "HusnulMuhadara",
+                "Kad\u0131IyazTertib",
+                "Kaynak",
+                "K\u0131fti\u0130nbahurRuvat",
+                "MakriziMukaffa",
+                "RaziMe\u015fyeha",
+                "SemaniEnsab",
+                "SilefiMucem",
+                "YakutHameviMucem",
+                "ZehebiSiyer",
+                "ZehebiTarih",
+                "ZehebiTezkira",
+                "\u00dcdf\u00fcviTali",
+                "\u0130bnAdimBugye",
+                "\u0130bnAsakirTarih",
+                "\u0130bnBe\u015fkuvalS\u0131la",
+                "\u0130bnTahhan",
+                "\u0130bnYunusGureba",
+                "\u0130bnYunusTarih",
+                "\u0130bnulMukriMucem",
+                "\u0130bn\u00fclFaradiTarih"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "Kaynaklara G\u00f6re Rical Da\u011f\u0131l\u0131m\u0131",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_dccd614730ec4a6aa0a753161c0c371c.setOption(option_dccd614730ec4a6aa0a753161c0c371c);
+    </script>
+                <div id="051e6aa6067d4169b91f8972ad9b4572" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_051e6aa6067d4169b91f8972ad9b4572 = echarts.init(
+            document.getElementById('051e6aa6067d4169b91f8972ad9b4572'), 'white', {renderer: 'canvas'});
+        var option_051e6aa6067d4169b91f8972ad9b4572 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "Kaynak",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "MakriziMukaffa",
+                    "value": 431
+                },
+                {
+                    "name": "\u0130bnTahhan",
+                    "value": 272
+                },
+                {
+                    "name": "HabbalTarih",
+                    "value": 235
+                },
+                {
+                    "name": "\u0130bnYunusTarih",
+                    "value": 194
+                },
+                {
+                    "name": "ZehebiTarih",
+                    "value": 178
+                },
+                {
+                    "name": "\u0130bnYunusGureba",
+                    "value": 156
+                },
+                {
+                    "name": "\u0130bnBe\u015fkuvalS\u0131la",
+                    "value": 93
+                },
+                {
+                    "name": "\u0130bn\u00fclFaradiTarih",
+                    "value": 93
+                },
+                {
+                    "name": "HatibTarih",
+                    "value": 65
+                },
+                {
+                    "name": "HusnulMuhadara",
+                    "value": 47
+                },
+                {
+                    "name": "ZehebiSiyer",
+                    "value": 36
+                },
+                {
+                    "name": "\u0130bnAsakirTarih",
+                    "value": 32
+                },
+                {
+                    "name": "ZehebiTezkira",
+                    "value": 21
+                },
+                {
+                    "name": "RaziMe\u015fyeha",
+                    "value": 14
+                },
+                {
+                    "name": "EbuCaferBugye",
+                    "value": 11
+                },
+                {
+                    "name": "Kad\u0131IyazTertib",
+                    "value": 7
+                },
+                {
+                    "name": "SilefiMucem",
+                    "value": 5
+                },
+                {
+                    "name": "\u00dcdf\u00fcviTali",
+                    "value": 3
+                },
+                {
+                    "name": "SemaniEnsab",
+                    "value": 3
+                },
+                {
+                    "name": "\u0130bnAdimBugye",
+                    "value": 2
+                },
+                {
+                    "name": "HakimTelhis",
+                    "value": 1
+                },
+                {
+                    "name": "K\u0131fti\u0130nbahurRuvat",
+                    "value": 1
+                },
+                {
+                    "name": "\u0130bnulMukriMucem",
+                    "value": 1
+                },
+                {
+                    "name": "Kaynak",
+                    "value": 1
+                },
+                {
+                    "name": "YakutHameviMucem",
+                    "value": 1
+                }
+            ],
+            "radius": [
+                "40%",
+                "60%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "outside",
+                "margin": 8,
+                "formatter": "{a|{a}}{abg|}\n{hr|}\n {a|{b}: }{c}  {per|{d}%}  ",
+                "backgroundColor": "#eee",
+                "borderColor": "#aaa",
+                "borderWidth": 3,
+                "borderRadius": 5,
+                "rich": {
+                    "a": {
+                        "color": "#999",
+                        "lineHeight": 8,
+                        "align": "center"
+                    },
+                    "abg": {
+                        "backgroundColor": "#e3e3e3",
+                        "width": "70%",
+                        "align": "right",
+                        "height": 10,
+                        "borderRadius": [
+                            4,
+                            4,
+                            0,
+                            0
+                        ]
+                    },
+                    "hr": {
+                        "borderColor": "#aaa",
+                        "width": "100%",
+                        "borderWidth": 0.5,
+                        "height": 0
+                    },
+                    "b": {
+                        "fontSize": 12,
+                        "lineHeight": 33
+                    },
+                    "per": {
+                        "color": "#eee",
+                        "backgroundColor": "#334455",
+                        "padding": [
+                            2,
+                            4
+                        ],
+                        "borderRadius": 2
+                    }
+                }
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "MakriziMukaffa",
+                "\u0130bnTahhan",
+                "HabbalTarih",
+                "\u0130bnYunusTarih",
+                "ZehebiTarih",
+                "\u0130bnYunusGureba",
+                "\u0130bnBe\u015fkuvalS\u0131la",
+                "\u0130bn\u00fclFaradiTarih",
+                "HatibTarih",
+                "HusnulMuhadara",
+                "ZehebiSiyer",
+                "\u0130bnAsakirTarih",
+                "ZehebiTezkira",
+                "RaziMe\u015fyeha",
+                "EbuCaferBugye",
+                "Kad\u0131IyazTertib",
+                "SilefiMucem",
+                "\u00dcdf\u00fcviTali",
+                "SemaniEnsab",
+                "\u0130bnAdimBugye",
+                "HakimTelhis",
+                "K\u0131fti\u0130nbahurRuvat",
+                "\u0130bnulMukriMucem",
+                "Kaynak",
+                "YakutHameviMucem"
+            ],
+            "selected": {},
+            "show": true,
+            "left": "left",
+            "orient": "vertical",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "Kaynak Da\u011f\u0131l\u0131m\u0131",
+            "left": "right",
+            "top": 25,
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_051e6aa6067d4169b91f8972ad9b4572.setOption(option_051e6aa6067d4169b91f8972ad9b4572);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
